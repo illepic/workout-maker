@@ -17,6 +17,7 @@
                 {{ movement }}
               </span>
             </div>
+            <div v-if="isSwole" class="alert alert-success">IS SWOLE.</div>
           </div>
         </div>
       </div>
@@ -77,6 +78,11 @@ export default {
         ...sampleSize(this.upper, 3),
         ...sampleSize(this.lower, 3),
       ];
+    },
+  },
+  computed: {
+    isSwole() {
+      return this.sample.includes('deadlifts');
     },
   },
 };
