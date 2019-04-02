@@ -25,17 +25,17 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h1>Upper</h1>
-          <ul>
-            <li v-for="top in upper" :key="top">
+          <h2 class="display-6 text-center">Upper</h2>
+          <ul class="list-group">
+            <li v-for="top in upper" :key="top" class="list-group-item">
               {{ top }}
             </li>
           </ul>
         </div>
         <div class="col">
-          <h1>Lower</h1>
-          <ul>
-            <li v-for="bottom in lower" :key="bottom">
+          <h2 class="display-6 text-center">Lower</h2>
+          <ul class="list-group">
+            <li v-for="bottom in lower" :key="bottom" class="list-group-item">
               {{ bottom }}
             </li>
           </ul>
